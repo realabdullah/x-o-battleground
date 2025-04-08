@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+	--ui-primary: black;
+}
+
+.dark {
+	--ui-primary: white;
+	--ui-bg: #0f172b;
+}
+
+@theme {
+	--font-sans: "Public Sans", sans-serif;
+}
