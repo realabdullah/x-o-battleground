@@ -1,0 +1,44 @@
+{
+	"name": "nuxt-app",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+		"lint:prettier": "prettier --check .",
+		"lint": "yarn lint:js && yarn lint:prettier",
+		"lintfix": "prettier --write --list-different ."
+	},
+	"dependencies": {
+		"@nuxt/fonts": "0.11.1",
+		"@nuxt/icon": "1.11.0",
+		"@nuxt/ui": "^3.0.2",
+		"@types/pg": "^8.11.11",
+		"@vueuse/nuxt": "13.0.0",
+		"canvas-confetti": "^1.9.3",
+		"eslint": "^9.24.0",
+		"motion-v": "^1.0.0-beta.0",
+		"notivue": "^2.4.5",
+		"nuxt": "^3.16.2",
+		"pg": "^8.14.1",
+		"socket.io-client": "^4.8.1",
+		"vue": "^3.5.13",
+		"vue-router": "^4.5.0"
+	},
+	"packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+	"devDependencies": {
+		"@eslint/js": "^9.24.0",
+		"@iconify-json/lucide": "^1.2.34",
+		"@types/canvas-confetti": "^1.9.0",
+		"eslint-config-prettier": "^10.1.1",
+		"eslint-plugin-vue": "^10.0.0",
+		"globals": "^16.0.0",
+		"prettier": "3.5.3",
+		"typescript": "^5.8.2",
+		"typescript-eslint": "^8.29.0"
+	}
+}
