@@ -10,7 +10,7 @@ export const useConnect = () => {
 		localStorage.setItem('playerId', playerId);
 	}
 
-	const socket: Socket = io("http://localhost:4000/", {
+	const socket: Socket = io(import.meta.env.VITE_SOCKET_URL || "http://localhost:4000/", {
 		auth: { playerId, gameId },
 		autoConnect: true,
 		transports: ["websocket"],
